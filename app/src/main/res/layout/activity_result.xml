@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.kkroo.dheeraj.nitcgpa.ResultActivity"
+    android:padding="0dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/linearLayout"
+        android:fillViewport="false"
+        android:scrollbars="none"
+        android:transitionGroup="false"
+        android:touchscreenBlocksFocus="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textRes"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin" />
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:background="@drawable/btnstyle"
+            android:clickable="true"
+            android:padding="5dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:textColor="#ffffff"
+            android:nestedScrollingEnabled="false"
+            android:onClick="onClickSave" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>
